@@ -47,6 +47,7 @@ function getDNSStats(domains) {
   });
   return results;
 }
+//
 
 module.exports = {
   getDNSStats

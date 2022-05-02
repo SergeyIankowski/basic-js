@@ -37,6 +37,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   result.push(getValue(letterStack));
   return result.join('');
 }
+//
 
 module.exports = {
   encodeLine

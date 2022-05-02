@@ -19,6 +19,7 @@ function deleteDigit(n) {
   }
   return Math.max(...result);
 }
+//
 
 module.exports = {
   deleteDigit

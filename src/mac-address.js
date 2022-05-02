@@ -26,6 +26,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   
   return true;
 }
+//
 module.exports = {
   isMAC48Address
 };

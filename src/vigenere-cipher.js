@@ -31,12 +31,14 @@ class VigenereCipheringMachine {
     str = str.toLowerCase();
     key = key.toLowerCase();
     const stringWithKeyLetters = this._makeStringAnalogueWithKeyLetters(str, key);
+
     const encryptedLettersArr = stringWithKeyLetters.split('').map((letter, index) => {
       if (letter.charCodeAt(0) < 97 || letter.charCodeAt(0) > 122) {
         return letter;
       }
       return this.vigenereMap[letter.charCodeAt(0) - 97][str[index].charCodeAt(0) - 97].toUpperCase();
     });
+
     const encryptedString = this.reverse ? encryptedLettersArr.reverse().join('') : encryptedLettersArr.join('');
     return encryptedString;
   }
